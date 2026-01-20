@@ -1,10 +1,13 @@
+
+    
 pipeline {
     agent any
 
     stages {
-        stage('Test') {
+        stage('Check Node & NPM') {
             steps {
-                echo 'Pipeline started successfully'
+                sh 'node -v'
+                sh 'npm -v'
             }
         }
     }
