@@ -6,8 +6,8 @@ pipeline {
     stages {
         stage('Check Node & NPM') {
             steps {
-                sh 'node -v'
-                sh 'npm -v'
+                bat 'node -v'
+                bat 'npm -v'
             }
         }
     }
